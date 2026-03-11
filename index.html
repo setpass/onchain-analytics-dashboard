@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onchain Analytics Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <aside class="sidebar card">
+        <div>
+          <p class="tag">Phân tích dữ liệu Web3</p>
+          <h1>Onchain Analytics Dashboard</h1>
+          <p class="muted">
+            Bảng điều khiển mô phỏng dữ liệu on-chain với ví hoạt động, volume giao dịch, protocol nổi bật và xu hướng thị trường.
+          </p>
+        </div>
+
+        <nav class="menu">
+          <button class="menu-item active">Tổng quan</button>
+          <button class="menu-item">Protocol</button>
+          <button class="menu-item">Chain</button>
+          <button class="menu-item">Hoạt động</button>
+        </nav>
+
+        <div class="wallet-box">
+          <span>Mạng đang xem</span>
+          <strong id="network-label">Ethereum Mainnet</strong>
+          <button id="refresh-dashboard" class="secondary">Làm mới dữ liệu</button>
+        </div>
+      </aside>
+
+      <section class="main-content">
+        <header class="topbar card">
+          <div>
+            <p class="eyebrow">On-chain data</p>
+            <h2>Phân tích hành vi và dòng tiền on-chain</h2>
+            <p class="muted">Một giao diện mô phỏng dashboard analytics dành cho hệ sinh thái blockchain và protocol Web3.</p>
+          </div>
+          <div class="topbar-actions">
+            <input id="search-input" type="text" placeholder="Tìm chain hoặc protocol" />
+            <button id="search-button">Thêm theo dõi</button>
+          </div>
+        </header>
+
+        <section class="stats-grid">
+          <article class="card stat-card highlight">
+            <span>Ví hoạt động</span>
+            <strong id="active-wallets">0</strong>
+            <small id="wallet-change">0% trong 24 giờ</small>
+          </article>
+          <article class="card stat-card">
+            <span>Khối lượng on-chain</span>
+            <strong id="volume-value">0 USDT</strong>
+            <small>Trong 24 giờ gần nhất</small>
+          </article>
+          <article class="card stat-card">
+            <span>Giao dịch</span>
+            <strong id="tx-count">0</strong>
+            <small>Số giao dịch mô phỏng</small>
+          </article>
+          <article class="card stat-card">
+            <span>Protocol nổi bật</span>
+            <strong id="top-protocol">-</strong>
+            <small id="top-protocol-change">Chưa có dữ liệu</small>
+          </article>
+        </section>
+
+        <section class="grid main-grid">
+          <div class="card">
+            <div class="panel-header">
+              <h3>Protocol nổi bật</h3>
+              <span class="muted">TVL, volume và mức tăng trưởng</span>
+            </div>
+            <div id="protocol-grid" class="protocol-grid"></div>
+          </div>
+
+          <div class="side-column">
+            <div class="card">
+              <div class="panel-header">
+                <h3>Top chain</h3>
+                <span class="muted">Dẫn đầu theo volume</span>
+              </div>
+              <ul id="chain-list" class="chain-list"></ul>
+            </div>
+
+            <div class="card">
+              <div class="panel-header">
+                <h3>Watchlist</h3>
+                <span class="muted">Chain hoặc protocol theo dõi</span>
+              </div>
+              <ul id="watchlist" class="watchlist"></ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="grid bottom-grid">
+          <div class="card">
+            <div class="panel-header">
+              <h3>Hoạt động gần đây</h3>
+              <span class="muted">Các dòng tiền và tương tác đáng chú ý</span>
+            </div>
+            <ul id="activity-list" class="activity-list"></ul>
+          </div>
+
+          <div class="card">
+            <div class="panel-header">
+              <h3>Nhận xét nhanh</h3>
+              <span class="muted">Tóm tắt dữ liệu mô phỏng</span>
+            </div>
+            <div id="insights" class="insights"></div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
