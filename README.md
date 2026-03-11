@@ -42,4 +42,5 @@ onchain-analytics-dashboard/
 
 ## Ghi chú
 
-Repo này phù hợp để mở rộng profile GitHub theo hướng dữ liệu, phân tích và sản phẩm Web3.
+<img width="1843" height="909" alt="6" src="https://github.com/user-attachments/assets/2ff875e5-f0ab-424d-b0b0-e1b0811c1feb" />
+
