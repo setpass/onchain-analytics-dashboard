@@ -1,23 +1,23 @@
 # Onchain Analytics Dashboard
 
-Một dự án web mô phỏng bảng điều khiển phân tích dữ liệu on-chain theo phong cách sản phẩm Web3.
+A Web-based product-style dashboard that simulates on-chain analytics data in a modern Web3 interface.
 
-## Chức năng hiện có
+## Current Features
 
-- Thống kê số ví hoạt động và khối lượng on-chain
-- Danh sách protocol nổi bật với TVL và volume
-- Top chain theo dữ liệu mô phỏng
-- Watchlist chain hoặc protocol đang theo dõi
-- Hoạt động gần đây như swap, bridge và stake
-- Phần nhận xét nhanh để tóm tắt tình hình dữ liệu
+• Overview metrics for active wallets and on-chain volume
+• Highlighted protocols with simulated TVL and volume data
+• Top chains ranked by sample analytics activity
+• Watchlist section for tracked chains or protocols
+• Recent activity feed including swaps, bridges, and staking actions
+• Quick insights section to summarize the current market snapshot
 
-## Công nghệ sử dụng
+## Tech Stack
 
 - HTML
 - CSS
 - JavaScript
 
-## Cấu trúc thư mục
+## Project Structure
 
 ```text
 onchain-analytics-dashboard/
@@ -27,20 +27,19 @@ onchain-analytics-dashboard/
 └── README.md
 ```
 
-## Cách chạy
+## How to Run
 
-1. Tải mã nguồn về máy
-2. Mở file `index.html` bằng trình duyệt
+1.  Download or clone the repository
+2.  Open index.html in your browser
 
-## Hướng phát triển thêm
+## Future Improvements
 
-- Kết nối dữ liệu thật từ API blockchain hoặc nền tảng analytics
-- Hỗ trợ nhiều chain hơn như Solana, BNB Chain và Optimism
-- Thêm biểu đồ hoạt động theo thời gian
-- Lọc dữ liệu theo protocol, chain và loại giao dịch
-- Bổ sung trang phân tích chi tiết cho từng protocol
+• Connect to real blockchain analytics APIs
+• Support more ecosystems such as Solana, BNB Chain, and Optimism
+• Add time-based activity charts
+• Filter data by protocol, chain, and transaction type
+• Create dedicated detail views for individual protocols
 
-## Ghi chú
 
 <img width="1843" height="909" alt="6" src="https://github.com/user-attachments/assets/2ff875e5-f0ab-424d-b0b0-e1b0811c1feb" />
 
